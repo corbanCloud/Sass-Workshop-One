@@ -1,0 +1,13 @@
+@mixin container{
+	display: block;
+	width: 100%;
+	max-width: 1040px;
+	margin: 0px auto 10px;
+	&:last-of-type{
+		margin-bottom: 0px;
+	}
+	&::before, &::after{
+		display: table;
+		clear: both;
+	}
+}
